@@ -1,0 +1,758 @@
+/* html, body, #root{
+    width: 100%;
+    height: 100%;
+} */
+
+/* #root {
+    background-color: black;
+} */
+
+  
+  /* body, html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-
+    color: none;
+  } */
+
+/* Hide 3D animation for small screens */
+@media (max-width: 768px) {
+  .landingpartright {
+    display: none;
+  }
+}
+
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .container{
+    overflow: hidden;
+    height :100%;
+    width : 100%;
+    background-color:rgb(2,4,10);
+    overflow:hidden;
+    position:fixed;
+    top:0;
+    left:0
+  }
+  
+  .element {
+    font-size: 3rem;
+    transform: translate(-50%, -50%);
+  }
+
+  .landingpart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+  }
+
+  .resume{
+    color: white;
+    position: absolute;
+    top: 89%;
+    left: 14%;
+    transform: translate(-50%, -50%);
+    z-index: 25;
+    background-color: cyan;
+    border: none;
+    border-radius: 10vh;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(173, 173, 173, 0.3); /* Semi-transparent */
+    backdrop-filter: blur(10px); /* Blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+  }
+
+  .resume:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    box-shadow: 0 0 10px 0 cyan;
+  }
+
+  .landingpartleft{
+    height: 100%;
+    width: 40%;
+    /* border: 2px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: white; */
+  }
+
+  #mypic{
+    height: 80%;
+    position: absolute;
+    top: 49%;
+    left: 27%;
+    transform: translate(-50%, -50%);
+    /* box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.7); */
+    z-index: 20;
+  }
+
+  .engineer{
+    position: absolute;
+    top: 24.5%;
+    left: 27%;
+    transform: translate(-50%, -50%);
+    z-index: 19;
+    color: white;
+    font-size: 7rem;
+    font-family: "Ubuntu", sans-serif;
+  }
+
+  .name{
+    position: absolute;
+    top: 74%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    z-index: 21;
+    color: cyan;
+    font-size: 6rem;
+    font-family: "Barlow", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .bio1{
+    position: absolute;
+    top: 83%;
+    left: 27%;
+    max-width: 35%;
+    transform: translate(-50%, -50%);
+    z-index: 21;
+    color: white;
+    font-size: 1.2rem;
+    font-family: "Ubuntu", sans-serif;
+
+  }
+
+
+  .landingpartright{
+    height: 100%;
+    width: 90%;
+  }
+
+  .navbar{
+    height: 7.5vh;
+    width: 70vw;
+    border: 0.5px solid white ;
+    background-color: red;
+    border-radius: 100vh;
+    position: absolute;
+    z-index: 15;
+    left: 50%;
+    top: 6%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(106, 105, 105, 0.3); /* Semi-transparent */
+    backdrop-filter: blur(10px); /* Blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for effect */
+  }
+
+  nav{
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .navoptions{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .navoptions:hover{
+    color: rgb(77, 77, 77);
+  }
+
+  .socialicons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60%;
+    width: 5%;
+    position: fixed;
+    z-index: 16;
+    left: -0.1%;
+    top: 55%;
+    transform: translate(0, -50%);
+    /* border: 1px solid white; */
+    border-left: none;
+    border-radius: 0 30px 30px 0;
+    background-color: rgba(84, 84, 84, 0.3); /* Semi-transparent */
+    backdrop-filter: blur(10px); /* Blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+  }
+
+  .icon{
+    color: cyan;
+    height: 3vh;
+    border-radius: 50%;
+    padding: 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px 0 cyan;
+  }
+
+  .icon:hover{
+    color: white;
+    box-shadow: 0 0 10px 0 white, 0 0 20px 0 white, 0 0 50px 0 white;
+  }
+
+  .profilepage{
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profilecontent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6%;
+    height: 75%;
+    width: 85%;
+  }
+
+  .profilecontentleft{
+    height: 80%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(84, 84, 84, 0.3); /* Semi-transparent */
+    backdrop-filter: blur(10px); /* Blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    border-radius: 40px 0 0 40px;
+  }
+
+  .profileheading{
+    color: cyan;
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: "Ubuntu", sans-serif;
+    margin-bottom: 10%;
+  }
+
+  .profilebutton{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: "Titillium Web", sans-serif;
+    background-color: rgba(0, 255, 255, 0.5); /* Semi-transparent */
+    backdrop-filter: blur(100px); /* Blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    border: 2px solid white;
+    border-radius: 18px;
+    width: 85%;
+    height: 13%;
+    margin-bottom: 5%;
+    cursor: pointer;
+  }
+
+  .profilebutton:hover{
+    background-color: rgba(0, 255, 255, 0.2); /* Semi-transparent */
+    backdrop-filter: blur(100px); /* Blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    border: 2px solid cyan;
+  }
+
+  .profilecontentright{
+    height: 80%;
+    width: 60%;
+    background-color: rgba(84, 84, 84, 0.2); /* Semi-transparent */
+    backdrop-filter: blur(10px); /* Blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    border-radius: 0 40px 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+  }
+
+  .education{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .educationcomp{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: "Titillium Web", sans-serif;
+    width: 90%;
+    height: 18%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -2%;
+    margin-bottom: 2%;
+  }
+
+
+  .collegetop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    font-size: 1.3rem;
+    font-family: "Ubuntu", sans-serif;
+  }
+
+  .collegebottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    font-size: 1rem;
+  }
+  
+  .collegename{
+    color: cyan;
+    font-size: 1.5rem;
+  }
+
+  .branchname{
+    color: white;
+  }
+  
+  .collegetime{
+    color: rgb(150, 150, 150);
+    font-size: 1rem;
+  }
+
+  .cg{
+    color: rgb(150, 150, 150);
+    font-size: 1rem;
+  }
+
+  .plustwotop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    font-size: 1.2rem;
+    font-family: "Ubuntu", sans-serif;
+    color: cyan;
+  }
+
+  .plustwobottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    font-size: 1rem;
+  }
+
+  .percentage{
+    color: rgb(150, 150, 150);
+  }
+
+  #collegecomponent{
+    height: 25%;
+    margin-bottom: 5%;
+    margin-top: 2%;
+  }
+
+  .about{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aboutheading{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    font-size: 1.2rem;
+    font-family: "Ubuntu", sans-serif;
+  }
+
+  .aboutheadingleft{
+    margin-right: 15px;
+    color: white;
+    font-size: 2rem;
+  }
+
+  .aboutheadingright{
+    color: cyan;
+    font-size: 2rem;
+    font-weight: 900;
+    font-family: "Barlow", sans-serif;
+  }
+
+  .aboutpara{
+    width: 100%;
+    font-size: 1.2rem;
+    font-family: "Ubuntu", sans-serif;
+    text-align: justify;
+    color: white;
+    margin-top: 0;
+  }
+
+  .skill{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 1px solid white; */
+  }
+
+  .skills{
+    width: 87%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 3%;
+  }
+
+  .skillhead{
+    color: cyan;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: "Ubuntu", sans-serif;
+    margin-bottom: 2%;
+    border-bottom: 1px solid cyan;
+  }
+
+  .slidecontainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .websubskills{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .frontend{
+    width: 100%;
+  }
+  .backend{
+    width: 100%;
+  }
+
+  .frontendhead{
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: "Titillium Web", sans-serif;
+  }
+
+  .backendhead{
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: "Titillium Web", sans-serif;
+  }
+
+  .machinelearningdiscription{
+    width: 100%;
+    font-size: 1rem;
+    font-family: "Ubuntu", sans-serif;
+    color: white;
+    text-align: justify;
+    margin-bottom: 4%;
+  }
+  
+
+  
+  
+
+
+
+
+  /* CSS for larger screens remains unchanged */
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 10px;
+    overflow: hidden;
+  }
+
+  .slidecontainer {
+    width: 100vw; /* Adjust the slide width to fit within the viewport */
+    padding: 10px;
+  }
+
+  .prev, .next {
+    /* Ensure buttons are outside the container */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+
+  .prev {
+    left: -50px; /* Move the previous button outside the slider */
+  }
+
+  .next {
+    right: -50px; /* Move the next button outside the slider */
+  }
+
+  /* Adjust font sizes for smaller screens */
+  .resume {
+    font-size: 0.8rem;
+    padding: 8px 16px;
+  }
+
+  .name {
+    font-size: 4rem;
+  }
+
+  .engineer {
+    font-size: 5rem;
+  }
+
+  .bio1 {
+    font-size: 1rem;
+  }
+
+  /* Adjust navbar width */
+  .navbar {
+    width: 90vw;
+  }
+
+  .navoptions {
+    font-size: 1rem;
+  }
+
+  .socialicons{
+    display: none;
+  }
+
+  .workslider{
+    height: 100vh;
+  }
+
+  #mypic{
+    height: 65%;
+    left: 52%;
+    top: 46%;
+  }
+
+  .engineer{
+    font-size: 4rem;
+    top: 25%;
+    left: 49%;
+  }
+
+  .name{
+    font-size: 4rem;
+    top: 68%;
+    left: 39%;
+  }
+
+  .bio1{
+    font-size: 0.9rem;
+    max-width: 90%;
+    width: 100%;
+    left: 53%;
+    top: 76%;
+  }
+
+  .resume{
+    font-size: 0.8rem;
+    padding: 8px 15px;
+    top: 82%;
+    left: 22%;
+  }
+
+  .profilecontent{
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    border-radius: 0;
+  }
+
+  .profileheading{
+    font-size: 1.5rem;
+    margin-bottom: 5%;
+    margin-top: 5%;
+  }
+
+  .profilebutton{
+    font-size: 1rem;
+    height: 17%;
+  }
+
+  .profilecontentleft{
+    width: 100%;
+    height: 50%;
+    border-radius: 50px 50px 0 0;
+  }
+
+  .profilecontentright{
+    width: 100%;
+    height: 100%;
+    border-radius: 0 0 50px 50px;
+  }
+
+  .profilecontentright p{
+    font-size: 0.9rem;
+  }
+
+  .education{
+    width: 100%;
+    height: 85%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+
+  .plustwotop{
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .plustwo{
+    font-size: 0.9rem;
+  }
+
+  .collegetime{
+    font-size: 0.8rem;
+  }
+
+  .collegename{
+    font-size: 1rem;
+  }
+
+  .branchname{
+    font-size: 0.9rem;
+    line-height: 1;
+  }
+  
+  .collegetop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+  }
+
+  .collegebottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .educationcomp{
+    margin-bottom: 0;
+  }
+
+  .profilepage{
+    height: 90vh;
+  }
+
+  .workslider{
+    font-size: 1rem;
+  }
+
+  .skill{
+    width: 100%;
+    height: 100%;
+  }
+
+  .skills{
+    width: 100%;
+    height: 100%;
+  }
+
+  .skillcontainer{
+    width: 100%;
+    height: 100%;
+  }
+
+  .skillhead{
+    font-size: 1.2rem;
+    margin-left: 4%;
+    margin-bottom: 5%;
+  }
+
+  #webskillhead{
+    margin-left: 4%;
+    margin-top: 70%;
+  }
+
+  .frontendhead{
+    font-size: 1.2rem;
+    margin-left: 4%;
+  }
+
+  .backendhead{
+    font-size: 1.2rem;
+    margin-left: 4%;
+  }
+
+  #machinelearning{
+    margin-top: 75%;
+  }
+
+  #machinelearninghead{
+    margin-left: 4%;
+  }
+
+  .machinelearningdiscription{
+    margin-left: 4%;
+    text-align: justify;
+    font-size: 0.7rem;
+    width: 90%;
+    margin-bottom: 10%;
+  }
+
+}

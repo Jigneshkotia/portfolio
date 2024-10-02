@@ -1,0 +1,255 @@
+  .slider-wrapper {
+    height: 100vh;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .workheading {
+    color: cyan;
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: "Ubuntu", sans-serif;
+    margin-bottom: 2%;
+  }
+  
+  .slider-content {
+    position: relative;
+    width: 100%;
+    height: 55%;
+    display: flex;
+    background-color: rgba(84, 84, 84, 0.3); /* Semi-transparent */
+    backdrop-filter: blur(10px); /* Blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    border-radius: 40px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .workslide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+    opacity: 0; /* Initially invisible */
+    z-index: 0;
+    transform: translateX(100%); /* Move out of view */
+  }
+  
+  .active {
+    opacity: 1;
+    z-index: 1; /* Bring the active slide to the front */
+    transform: translateX(0); /* Slide into view */
+  }
+  
+  .project-slide-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .project-image {
+    height: 100%;
+    width: 45%;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .projectimg {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .project-details {
+    width: 55%;
+    height: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .project-details h2 {
+    font-size: 2.3em;
+    margin-bottom: 10px;
+    color: cyan;
+    font-family: "Ubuntu", sans-serif;
+  }
+  
+  .project-details p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+  }
+  
+  .project-techs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .tech-badge {
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 600;
+  }
+  
+  /* Buttons for manual navigation */
+  .prev-button,
+  .next-button {
+    position: absolute;
+    top: 55%;
+    border: none;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  
+  .prev-button {
+    left: -1%;
+    transform: translateY(-50%);
+  }
+  
+  .next-button {
+    right: -1%;
+    transform: translateY(-50%);
+  }
+
+  .span{
+    color: cyan;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Responsive styles */
+@media (max-width: 768px) {
+    .slider-wrapper {
+      width: 80%; /* Slightly increased width for small screens */
+      height: 100vh;
+      padding-top: 10%;
+    }
+  
+    .workheading {
+      font-size: 2.5rem; /* Adjusted font size for smaller screens */
+    }
+  
+    .slider-content {
+      height: 80vh;
+    }
+  
+    .project-image {
+      height: 60%; /* Adjusted height */
+      width: 80%; /* Adjusted width for small screens */
+    }
+
+    .projectimg{
+        height: 100%;
+        width: 100%;
+        margin-top: 10%;
+        border-radius: 8px;
+    }
+
+    .project-slide-content {
+      justify-content: center;
+      flex-direction: column;
+      height: 70vh;
+    }
+  
+    .project-details {
+      width: 85%; /* Full width on small screens */
+      padding: 20px; /* Adjusted padding */
+      padding-top: 40px;
+      height: 50%;
+      justify-content: center;
+      align-items: flex-start;
+      padding-left: 5%;
+    }
+  
+    .project-details h2 {
+      font-size: 1.8em; /* Adjusted font size */
+    }
+  
+    .project-details p {
+      font-size: 1em; /* Adjusted font size */
+    }
+  
+    .project-techs {
+      gap: 8px; /* Reduced gap */
+      margin-bottom: 20px; /* Adjusted margin */
+    }
+  
+    .tech-badge {
+      padding: 4px 8px; /* Adjusted padding */
+      font-size: 0.9em; /* Adjusted font size */
+    }
+  
+    /* Buttons for manual navigation */
+    .prev-button,
+    .next-button {
+      padding: 8px;
+      top: 49%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .workheading {
+      font-size: 1.5rem; /* Further adjusted font size */
+    }
+  
+    .slider-content {
+      height: 70%; /* Reduced height */
+    }
+  
+    .project-image {
+      height: 35%; /* Further reduced height */
+      width: 90%; /* Full width */
+    }
+  
+    .project-details h2 {
+      font-size: 1.3em; /* Further reduced font size */
+      margin-bottom: 0px;
+      padding: 0;
+    }
+  
+    .project-details p {
+      font-size: 0.8em; /* Further reduced font size */
+    }
+  
+    .tech-badge {
+      font-size: 0.7em; /* Further reduced font size */
+    }
+  }
