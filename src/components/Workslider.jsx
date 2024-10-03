@@ -8,14 +8,14 @@ const ProjectSlider = () => {
       title: "ChattingKaro",
       description: "This dynamic web-based chat application offers a seamless messaging experience with features like media and file sharing. Built with a responsive React frontend, it utilizes MongoDB for efficient data management and Cloudinary for media handling. The Express.js backend ensures scalability, while Socket.io enables real-time communication, allowing instant messaging and live updates without page refreshes. (CLICK ON IMAGE TO CHECK THIS OUT)",
       techs: ["MERN Stack", "Socket.io"],
-      image: "/chattingkaroimg.png",
+      image: "chattingkaroimg.png",
       link: "https://chattingkaro.live"
     },
     {
       title: "Calorie Counter",
       description: "This user-friendly web-based application predicts calorie expenditure during workouts based on user input. Developed with Streamlit, it features an intuitive interface for easy data entry and viewing of predictions. Data processing and analysis are efficiently handled using Pandas and NumPy, while model performance is evaluated using scikit-learn metrics such as MAE, MSE, and RMSE. (CLICK ON IMAGE TO CHECK THIS OUT)",
       techs: ["XGBoost", "Streamlit", "sklearn"],
-      image: "/calorie.png",
+      image: "calorie.png",
       link: "https://caloriecounter.streamlit.app/"
     }
   ];

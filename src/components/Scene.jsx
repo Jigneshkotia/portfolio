@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { useTexture } from "@react-three/drei";
 import * as THREE from "three"
-import chattingkaroimg from './chattingkaroimg.png';
+import chattingkaroimg from './projectbanner.png';
 import { useFrame } from "@react-three/fiber";
 
 
@@ -16,7 +16,7 @@ export const Scene = () => {
     <group rotation={[-1, 1.9, 0.5]} >
     <mesh ref={cyl} position={[0, -0.2, 0.4]} >
       <cylinderGeometry args={[1.1, 1.1, 1.1, 60, 60, true]} />
-      <meshStandardMaterial map={tex} side={THREE.DoubleSide} />
+      <meshStandardMaterial map={tex} side={THREE.DoubleSide} transparent={true} />
     </mesh>
     </group>
   );
