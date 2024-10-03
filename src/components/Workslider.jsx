@@ -16,7 +16,7 @@ const ProjectSlider = () => {
       description: "This user-friendly web-based application predicts calorie expenditure during workouts based on user input. Developed with Streamlit, it features an intuitive interface for easy data entry and viewing of predictions. Data processing and analysis are efficiently handled using Pandas and NumPy, while model performance is evaluated using scikit-learn metrics such as MAE, MSE, and RMSE. (CLICK ON IMAGE TO CHECK THIS OUT)",
       techs: ["XGBoost", "Streamlit", "sklearn"],
       image: "calorie.png",
-      link: "https://caloriecounter.streamlit.app/"
+      link: "https://calorieburn.streamlit.app/"
     }
   ];
 
