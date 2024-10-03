@@ -1,5 +1,5 @@
 import React from "react";
-import ProjectAnimation from "../components/projectAnimation";
+import ProjectAnimation from "../components/ProjectAnimation.jsx";
 import  mypic  from "./mypic1.png";
 import { Download } from "@mui/icons-material";
 
